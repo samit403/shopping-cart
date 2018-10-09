@@ -31,7 +31,7 @@
 .container .itemPrice {
     font-size: 18px;
     font-weight: 500;
-    margin-right: 70px;
+    margin-right: 60px;
 }
 
 
@@ -42,8 +42,7 @@
 }
 
 .container .priceButton {
-    display: grid;
-    grid-template-columns: 100px 1fr;
+    display: flex;
 }
 .container .priceButton button {
     font-size: 16px;
@@ -52,6 +51,7 @@
     background-color: none;
     border: 1px solid orange;
     border-radius: 4px;
+    margin-top: -20px;
 }
 
 .container .priceButton button:hover {

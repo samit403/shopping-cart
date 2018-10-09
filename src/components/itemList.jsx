@@ -49,8 +49,8 @@ class ItemList extends Component {
         };
     }
 
-    handleVegIcon (i) {
-        return (this.state.cards[i].isVeg) === true ? 'https://png.icons8.com/color/160/vegetarian-food-symbol.png' : 'https://png.icons8.com/color/1600/non-vegetarian-food-symbol.png'
+    handleVegIcon = (i) => {
+        return (this.state.cards[i].isVeg) ? 'https://png.icons8.com/color/160/vegetarian-food-symbol.png' : 'https://png.icons8.com/color/1600/non-vegetarian-food-symbol.png'
     }
 
     renderCard (i) {
@@ -61,7 +61,7 @@ class ItemList extends Component {
                     itemName={this.state.cards[i].itemName}
                     itemDescription={this.state.cards[i].itemDescription}
                     itemPrice={this.state.cards[i].itemPrice}
-                    isVeg={this.handleVegIcon(i)}
+                    isVeg={() => this.handleVegIcon(i)}
                 />;
     }
 
