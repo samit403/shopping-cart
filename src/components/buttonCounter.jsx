@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './buttonCounter.css'
 
 class ButtonCounter extends Component {
+    
     constructor(props) {
         super(props);
         this.state = { 
@@ -9,7 +10,7 @@ class ButtonCounter extends Component {
             count: 0
         };
     }
-
+    
     handleClick = () => {
         this.setState({isClicked: true, count: this.state.count + 1 })
     }

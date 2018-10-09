@@ -4,13 +4,13 @@ import CartComponent from './cartComponent';
 
 class CartList extends Component {
 
+
     render() { 
         return ( 
             <div className="grid-container">
                 <div className='header'>Cart</div>
                 <div className="sub-header">1 Item</div>
-                
-                <CartComponent />
+
             </div>
         );
     }
