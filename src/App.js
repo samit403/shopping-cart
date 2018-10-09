@@ -10,6 +10,7 @@ class App extends Component {
         <ItemList />
         <CartComponent />
       </div>
+      
     );
   }
 }
