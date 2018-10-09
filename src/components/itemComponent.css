@@ -31,7 +31,7 @@
 .container .itemPrice {
     font-size: 18px;
     font-weight: 500;
-    margin-right: 60px;
+    margin-right: 30px;
 }
 
 
@@ -44,7 +44,7 @@
 .container .priceButton {
     display: flex;
 }
-.container .priceButton button {
+/* .container .priceButton button {
     font-size: 16px;
     font-weight: 500;
     color: orange;
@@ -57,4 +57,4 @@
 .container .priceButton button:hover {
     color: white;
     background-color: orange;
-}
+} */

@@ -61,7 +61,7 @@ class ItemList extends Component {
                     itemName={this.state.cards[i].itemName}
                     itemDescription={this.state.cards[i].itemDescription}
                     itemPrice={this.state.cards[i].itemPrice}
-                    isVeg={() => this.handleVegIcon(i)}
+                    isVeg={this.handleVegIcon(i)}
                 />;
     }
 
