@@ -1,0 +1,60 @@
+.container {
+    width: 200px;
+    margin: 20px;
+    background-color: white; 
+    color: rgba(17, 15, 15, 0.8);
+    display: grid;
+}
+
+.container .itemTitle {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    margin-top: 10px;
+}
+
+.container img {
+    width: 200px;
+    /* height: 100%; */
+}
+
+.container .itemName {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.container .itemDescription {
+    font-size: 12px;
+    padding: 10px 0 20px 0;
+}
+
+.container .itemPrice {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 70px;
+}
+
+
+.container img.isVegIcon {
+    width: 16px;
+    height: 16px;
+    /* margin-right: 10px; */
+}
+
+.container .priceButton {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+.container .priceButton button {
+    font-size: 16px;
+    font-weight: 500;
+    color: orange;
+    background-color: none;
+    border: 1px solid orange;
+    border-radius: 4px;
+}
+
+.container .priceButton button:hover {
+    color: white;
+    background-color: orange;
+}
