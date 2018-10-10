@@ -4,29 +4,8 @@ import ButtonCounter from './buttonCounter';
 
 class ItemComponent extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            isClicked: false,
-            count: this.props.count
-        };
-    }
-
-    handleClick = () => {
-        this.setState({ isClicked: true, count: this.state.count + 1 });
-    }
-
-    handleAddItem = () => {
-        this.setState({ count: this.state.count + 1 });
-    }
-
-    handleRemoveItem = () => {
-        this.setState({ count: this.state.count - 1 });
-    }
-
     render() {
         
-        console.log('card props:', this.props);
         return (
             
             <div className='container'>
@@ -40,10 +19,10 @@ class ItemComponent extends Component {
                 <div className='priceButton'>
                     <div className="itemPrice">₹{this.props.price}</div>
                     <ButtonCounter 
-                        count={this.state.count} 
-                        onAdd={this.handleClick} 
-                        onAddItem={this.handleAddItem} 
-                        onRemoveItem={this.handleRemoveItem}
+                        count={this.props.count}
+                        onAdd={this.props.onAdd}
+                        onAddItem={this.props.onAddItem} 
+                        onRemoveItem={this.props.onRemoveItem}
                     />
                 </div>
             </div>

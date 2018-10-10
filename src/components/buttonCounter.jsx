@@ -4,7 +4,6 @@ import './buttonCounter.css'
 class ButtonCounter extends Component {
 
     render() {
-        console.log('button',this.props);
         
         return (
             (this.props.count !== 0) ? 
